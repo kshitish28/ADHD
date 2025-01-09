@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADHD Assistant</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>ADHD Assistant</h1>
+            <p>Stay focused and organized</p>
+        </header>
+        <main>
+            <div class="grid">
+                <!-- Task List -->
+                <div class="card">
+                    <h2><i class="fas fa-tasks"></i> Task List</h2>
+                    <input type="text" id="task-input" placeholder="Add a new task...">
+                    <button id="add-task">Add Task</button>
+                    <ul id="task-list"></ul>
+                </div>
+                <!-- Focus Timer -->
+                <div class="card">
+                    <h2><i class="fas fa-clock"></i> Focus Timer</h2>
+                    <div id="timer">25:00</div>
+                    <div class="timer-controls">
+                        <button id="start-timer" class="green">Start</button>
+                        <button id="pause-timer" class="yellow">Pause</button>
+                        <button id="reset-timer" class="red">Reset</button>
+                    </div>
+                </div>
+                <!-- Mood Tracker -->
+                <div class="card">
+                    <h2><i class="fas fa-smile"></i> Mood Tracker</h2>
+                    <div class="mood-icons">
+                        <span>😊</span>
+                        <span>😐</span>
+                        <span>😔</span>
+                        <span>😭</span>
+                        <span>😴</span>
+                    </div>
+                    <div id="mood-history">
+                        <!-- The history of selected moods will be listed here -->
+                    </div>
+                </div>
+                <!-- Quick Notes -->
+                <div class="card">
+                    <h2><i class="fas fa-sticky-note"></i> Quick Notes</h2>
+                    <textarea id="quick-notes" placeholder="Write your thoughts here..."></textarea>
+                    <button id="save-notes">Save Notes</button>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
